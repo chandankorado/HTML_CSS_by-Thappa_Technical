@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <h2>Header Section</h2>
+  </header>
+  <nav class="nav">
+
+  </nav>
+  <main class="hero">
+    <div>
+      <div class="paras">
+        <p>Paragraph :Lorem ipsum, amet consectetur adipisicing elit. Neque </p>
+
+        <p>This is a <strong>Strong important</strong> Paragraph</p>
+        <p>This is a <em>Emphasized </em> Paragraph</p>
+        <p>This is a <u>underlined</u> Paragraph</p>
+        <p>This is a <s>Strikethrough </s>Paragraph</p>
+        <p>This is a H<sub>2O</sub> Subscript</p>
+        <p> SuperScript: a<sup>2</sup> + b<sup>2</sup></p>
+        <p>This is a <small>Small </small> Paragraph</p>
+        <p>This is a <del>Delete </del> Paragraph</p>
+      </div>
+      <hr>
+
+      <div class="link">
+        <a href="www.google.com" title="click to open in nxt tab" target="_blank">Blank link</a>
+        <a href="www.google.com" title="click to open in here" target="_parent">Parent link</a>
+        <a href="www.google.com" title="click to open in here" target="_self">Self link</a>
+        <a href="www.google.com" title="click to open in here" target="_top"
+          download="./images/css.png">Download</a>
+        <a href=www.google.com> simple</a>
+        <a href="mailto:chandankorad@gmail.com">Mail</a>
+        <a href="tel:+917330726545">Call</a>
+      </div>
+
+      <div class="entities">
+        <p>signs are : &lt &gt &amp &copy &reg </p>
+        <figure>
+          <img src="./images/css1.png" alt="reactLogo" title="ImageReact" loading="lazy">
+          <figcaption>CSS Course</figcaption>
+        </figure>
+
+      </div>
+      <div class="stick">
+        <h3>chat</h3>
+      </div> 
+  
+      
+      <div class="media">
+        <audio controls>
+          Music
+          <source src="./audio/audio_thapa.mp3" type="audio/mpeg">
+          <source src="./audio/audio_thapa.wav" type="audio/wav">
+        </audio>
+        <br>
+        <video controls preload muted loop poster="./images/html.webp">
+
+          <source src="./video/thapatech.mp4" type="video/mp4">
+          <source src="./video/thapatech1.webm" type="video/webm">
+        </video>
+      </div>
+      <picture>
+        <source srcset="./images/html.webp" type="image/webp">
+        <source srcset="./images/html.jpg" type="image/jpg">
+        <source srcset="./images/html.jpeg" type="image/jpeg">
+        <source srcset="./images/html.svg" type="image/svg">
+        <img src="./images/css1.png" alt="reactLogo" title="ImageReact">
+      </picture>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="3">Time Table</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>DSA</td>
+            <td>MEAN</td>
+            <td>APT</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>22</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>12</td>
+
+            <td colspan="2">32</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- <iframe src="./video/thapatech1.webm" frameborder="0"
+      
+      >
+      </iframe> -->
+    </div>
+
+    <div class="advform">
+      <form action="/submit" method="post">
+        <fieldset>
+          <legend>FormFilling</legend>
+          <div>
+            <label for="password">Password</label>
+          
+            <input type="password" name="password" id="password" placeholder="Enter password.." /></div>
+          <div>
+            <label for="number">max Subject</label>
+            <input type="number" id="number" max="5" min="1" value="1" />
+          </div>
+          <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="male" />Male
+            <input type="radio" name="gender" value="female" />Female
+          </div>
+          <div>
+            <label for="hobbies">Hobbies</label>
+            <input type="checkbox" name="interest" value="music" />Music
+            <input type="checkbox" name="interest" value="sports" />Sports
+          </div>
+          <div>
+            <label for="country">Country</label>
+            <input type="text" name="country" id="country" list="countries" />
+            <datalist id="countries">
+              <option value="india">INdia</option>
+              <option value="pak">Pakistan</option>
+              <option value="srk">Srclang</option>
+            </datalist>
+    
+          </div>
+          <div>
+            <label for="comment">Comment</label>
+            <textarea name="comment" cols="10" rows="5" placeholder="Enter comment"></textarea>
+          </div>
+          <div>
+            <label for="file">UploadFile</label>
+            <input type="file" name="fileupload">
+          </div>
+          <div>
+            <input type="submit" value="Submit">
+            <button type="submit">Submit</button>
+          </div>
+          <div>
+            <label for="range">Range</label>
+            <input type="range" name="volume" max="100" min="0" value="70"/>
+          </div>
+          <div>
+            <label for="birthday">BirthDay</label>
+            <input type="date" name="birthday"/>
+          </div>
+          <div>
+            <label for="appontmentTime">AppointmentTime</label>
+            <input type="time" name="appointmentTime" id="">
+          </div>
+          <div>
+            <label for="favcolor">FavouriteColor</label>
+            <input type="color" name="favcolor" />
+          </div>
+          <div>
+            <label for="website">Website</label>
+            <input type="url" name="website" placeholder="enter url"/>
+          </div>
+          <div>
+            <label for="searchQuery">SearchQuery</label>
+            <input type="search" name="searchQuery" placeholder="search here..."/>
+          </div>
+          <div>
+            <label for="expiryDate">Month & Year</label>
+            <input type="month" name="expiryDate"/>
+          </div>
+          <div>
+            <label for="week">VacationWeek</label>
+            <input type="week" name="vacationweek"/>
+          </div>
+      </fieldset>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+
+  </footer>
+
+</body>
+
+</html>
